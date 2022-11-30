@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html 
+ xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Student Report</title>
+<link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-betal/dist/css/bootstrap.min.css"  rel="stylesheet" ><body>
+</head>
+<div class="container">
+<div class="row">
+ 
+ <div>
+ <h1>Student Marks calculation </h1>
+ </div>
+ <form th:action="@{re}" th:object="${student}"  method="POST">
+ <div>
+ <label>student name</label>
+ <br>
+ <input type="text" class="form-control" name="stname" >
+ </div>
+ <h3>SEMESTER-I</h3>
+ <div>
+ <label>English</label>
+ <br>
+ <input type="text" class="form-control" name="m1" >
+ </div>
+ <div>
+ <label>Mathematics</label>
+ <br>
+ <input type="text" class="form-control" name="m2" >
+ </div>
+ <div>
+ <label>science</label>
+ <br>
+ <input type="text" class="form-control" name="m3" >
+ </div>
+ <h3>SEMESTER-II</h3>
+ <div>
+ <label>English</label>
+ <br>
+ <input width=50 type="text" class="form-control" name="n1" >
+ </div>
+ <div>
+ <label>Mathematics</label>
+ <br>
+ <input type="text" class="form-control" name="n2" >
+ </div>
+ <div>
+ <label>science</label>
+ <br>
+ <input type="text" class="form-control" name="n3" >
+ </div>
+
+ <input type="submit" />
+ 
+ </form>
+ </div>
+</div>
+</body>
+</html>

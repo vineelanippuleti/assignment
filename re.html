@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thmeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Student Report</title>
+</head>
+<body>
+<h1>Result</h1>
+<p>Student Name</p>
+<p th:text="${student.getStname()}"></p>
+<p>SEMESTER-I</p>
+<p>Total Marks</p>
+<p th:text="${student.getTotal()}"></p>
+<p>Average</p>
+<p th:text="${student.getAvg()}"></p>
+<p>SEMESTER-II></p>
+<p>Total Marks</p>
+<p th:text="${student.getTotal1()}"></p>
+<p>Average</p>
+<p th:text="${student.getAvg()}"></p>
+</body>
+</html>
